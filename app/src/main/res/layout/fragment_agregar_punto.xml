@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearFragmentAgregar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragment.AgregarPuntoFragment">
+
+    <TextView
+        android:id="@+id/textViewCircleFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 0 %"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/Circular_Bar_Circle_Fragment"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="232dp"
+        android:layout_height="272dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/cpb_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Imagen del Punto"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgCamaraAgregar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+
+                app:srcCompat="@drawable/camera" />
+
+            <!--android:src="@drawable/ic_baseline_vpn_key_24"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tipo de punto recarga"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <Spinner
+                    android:id="@+id/categoriaPuntoRecarga"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:minHeight="48dp"
+
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtNombreInputFragmentAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                app:counterTextColor="@color/azul_celeste"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:startIconDrawable="@drawable/ic_baseline_ev_station_24"
+                app:startIconTint="@color/blue_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edNombrePuntoRecargaAgregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="Nombre del punto de recarga"
+                    android:inputType="textPersonName"
+
+                    android:maxLength="17"
+                    android:textSize="16dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtGrupoInputFragmentAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="14"
+                app:counterTextColor="@color/azul_celeste"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:startIconDrawable="@drawable/ic_baseline_group_24"
+                app:startIconTint="@color/blue_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edGrupoPuntoRecargaAgregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="Grupo del punto de recarga"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDireccionInputFragmentAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:counterTextColor="@color/azul_celeste"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:startIconDrawable="@drawable/ic_baseline_maps_home_work_24"
+                app:startIconTint="@color/blue_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edDireccionPuntoRecargaAgregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="Direccion del punto de recarga"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="26"
+                    android:textSize="16dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtTelefonoInputFragmentAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="11"
+                app:counterTextColor="@color/azul_celeste"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:prefixText="+57"
+                app:prefixTextColor="@color/blue_dark_2"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                app:startIconTint="@color/blue_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edTelefonoPuntoRecargaAgregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="Telefono del punto de recarga"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:textSize="16dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFragmenAgregar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Disponibilidad inicial"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/rbDisponiblePuntoRecargaAgregar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_casilla"
+                    android:checked="true"
+                    android:text="Disponible"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/rbNoDisponiblePuntoRecargaAgregar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/color_casilla"
+                    android:text="No Disponible"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnEnviarPuntoRecarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Enviar"
+
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

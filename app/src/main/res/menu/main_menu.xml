@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/primero"
+            android:icon="@drawable/ic_baseline_add_chart_24"
+            android:title="primero"/>
+
+        <item android:id="@+id/segundo"
+            android:icon="@drawable/ic_baseline_electric_bolt_24"
+            android:title="segundo"/>
+
+        <item android:id="@+id/tercero"
+            android:icon="@drawable/ic_baseline_maps_home_work_24"
+            android:title="tercero"/>
+    </group>
+
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/cuarto"
+                    android:icon="@drawable/ic_baseline_check_box_24"
+                    android:title="cuarto"/>
+
+                <item android:id="@+id/quinto"
+                    android:icon="@drawable/ic_baseline_disabled_by_default_24_white_blue"
+                    android:title="quinto"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Communication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/sexto"
+                    android:icon="@drawable/ic_baseline_error_outline_24"
+                    android:title="sexto"/>
+
+                <item android:id="@+id/septimo"
+                    android:icon="@drawable/ic_baseline_photo_camera_back_24_fondo"
+                    android:title="septimo"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

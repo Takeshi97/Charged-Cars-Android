@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "403797753613",
+    "project_id": "charged-cars-7f54f",
+    "storage_bucket": "charged-cars-7f54f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403797753613:android:df7c08299cb73d8decfa44",
+        "android_client_info": {
+          "package_name": "electric.cars.chargedcars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403797753613-nsmqek1ugtp5n2m86fq70k2m3hbaa1fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSPs0wqsLolwxZoypCREF0Qnkzmx3y0GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403797753613-nsmqek1ugtp5n2m86fq70k2m3hbaa1fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

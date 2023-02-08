@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_toast_ethernet"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_internet"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+
+
+    android:paddingBottom="15dp">
+
+    <!--
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    -->
+
+    <ImageView
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        app:srcCompat="@drawable/ic_baseline_signal_wifi_connected_no_internet_4_24" />
+
+    <TextView
+        android:id="@+id/txtMessageToast_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:breakStrategy="simple"
+        android:fontFamily="@font/abeezee"
+        android:padding="10dp"
+        android:text="La red de Internet no está habilitada"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:autoSizeTextType="none" />
+
+    <!--android:paddingStart="10dp"-->
+
+</LinearLayout>
+
+<!--
+center | center_horizontal
+sans-serif-black
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/color_casilla_dos"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/color_contorno_uno"
+        android:padding="8dp"
+        android:gravity="center"
+        android:src="@drawable/ic_baseline_save_24_guardar_white"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:text="¿Desea registrar la información suministrada?"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+
+            >
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_casilla_cuatro"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            app:backgroundTint="@null" />
+
+
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_casilla_cuatro"
+            android:text="Si"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            app:backgroundTint="@null" />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

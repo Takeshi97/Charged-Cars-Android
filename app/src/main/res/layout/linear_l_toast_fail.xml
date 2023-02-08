@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout_toast_fail"
+    android:orientation="horizontal"
+    android:background="@drawable/background_red"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_horizontal"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+
+
+    >
+
+    <!--
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    -->
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_disabled_by_default_24_white_blue"  />
+
+    <TextView
+        android:id="@+id/txtMessageToast_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:textStyle="normal"
+        android:paddingStart="10dp"
+        android:text="@string/por_favor_complete_todas_las_casillas"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+        <!--android:paddingStart="10dp"-->
+
+</LinearLayout>
+
+<!--
+center | center_horizontal
+sans-serif-black
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

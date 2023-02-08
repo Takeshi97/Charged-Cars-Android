@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@drawable/animation_list_layoutt_1"
+
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-110dp"
+        android:gravity="center"
+        android:text="0 %"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:indeterminate="true"
+        android:layout_marginBottom="-170dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:indeterminateDrawable="@drawable/pb_drawable_2"
+        android:indeterminateDuration="2000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/charged_cars_company"
+                android:textColor="@color/ic_launcher_electrico_background"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="172dp"
+                app:srcCompat="@drawable/electric_car" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:startIconTint="@color/blue_dark"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edCorreoLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="@string/ingrese_su_correo"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16dp"
+
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endIconMode="password_toggle"
+                app:errorTextAppearance="@font/cormorant_sc_bold"
+                app:errorTextColor="@color/red_error"
+                app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                app:startIconTint="@color/blue_dark"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edPassLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/color_casilla_dos"
+                    android:hint="@string/contrase_a"
+                    android:inputType="textPassword"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtOlvidoPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="olvidoContraseña"
+                android:text="@string/olvido_su_pass"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/azul_celeste"
+                android:textSize="18dp"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+
+                    android:text="@string/iniciar"
+                    android:textSize="14dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:onClick="registrarse"
+                    android:text="@string/registrarse"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
